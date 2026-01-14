@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoBelajar</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li class="logo"><img src="../images/logo.png" alt="VideoBelajar"></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-main">
+        <article class="container-login register">
+            <form action="#">
+                <div class="header-form">
+                    <h1>Pendaftaran Akun</h1>
+                    <span>Yuk, daftarkan akunmu sekarang juga!</span>
+                </div>
+                <div class="container-input-section">
+                    <div class="form-section">
+                        <label class="label1" for="namaLengkap" required>Nama Lengkap</label><span class="asterisk">*</span>
+                        <input class ="input-login-primary" type="text" name="namaLengkap" id="namaLengkap" required/>
+                    </div>
+                    <div class="form-section">
+                        <label class="label1" for="email" required>E-Mail</label><span class="asterisk">*</span>
+                        <input class ="input-login-primary" type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="form-section">
+                        <label class="label1" for="gender" required>Jenis Kelamin</label><span class="asterisk">*</span>
+                        <select class="input-login-primary select-option" name="gender" id="gender" required>
+                            <option value=""></option>
+                            <option value="wanita">Wanita</option>
+                            <option value="laki">Laki-laki</option>
+                        </select>
+                    </div>
+                    <div class="form-section-flex">
+                        <div class="form-section-1">
+                            <label class="label1" for="loc" required>No. Hp</label><span class="asterisk">*</span>
+                            <div class="wrapper-input-phone">
+                                <div class="wrapper-location">
+                                    <img src="../images/idn.png" alt="">
+                                    <select class="input-login-primary select-option" name="loc" id="loc" required>
+                                        <option value="+62">+62</option>
+                                        <option value="+60">+60</option>
+                                    </select>
+                                </div>
+                                <input class ="input-login-primary" type="text" name="number" id="number"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <label class="label1" for="password">Kata Sandi</label><span class="asterisk">*</span>
+                        <input class ="input-login-primary" type="password" name="password" id="password" required/>
+                        <img class="hide-eye-register1" src="../images/eye.png" alt="">
+                    </div>
+                    <div class="form-section margin-top-minus-24px">
+                        <label class="label1" for="kataSandi2">Konfirmasi Kata Sandi</label><span class="asterisk">*</span>
+                        <input class ="input-login-primary" type="password" name="password2" id="password2" required/>
+                        <img class="hide-eye-register2" src="../images/eye.png" alt="">
+                    </div>
+                    <span class="forgotpassword margin-top-minus-24px"><a href="#">Lupa Password?</a></span>
+                </div>
+                <div class="container-bottom-form">
+                    <div class="container-button-login">
+                        <input class="button button-primary" type="submit" value="Daftar"/>
+                        <a href="../index.html"><input class="button button-secondary" type="button" value="Masuk"/> </a>
+                    </div>
+                    <div class="divider">
+                        <hr class="solid">
+                        <span>atau</span>
+                        <hr class="solid">
+                    </div>
+                    <div>
+                        <button class="button button-google"><img src="../images/logos_google-icon.png" alt=""><span>Daftar dengan Google</span></button>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url(style.css);
+
+.register {
+    height: 1000px !important;
+}
+
+.wrapper-input-phone {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.wrapper-location {
+    display: flex;
+}
+
+select::after {
+    color: red;
+}
+
+.wrapper-location img {
+    padding: 11px 10px;
+    border-top: 1px solid rgba(58, 53, 65, 0.12);
+    border-left: 1px solid rgba(58, 53, 65, 0.12);
+    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+
+    border-radius: 6px 0px 0px 6px;
+    background-color: rgba(244, 245, 250, 1);
+}
+
+.wrapper-location .input-login-primary {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.wrapper-location select {
+    width: 110px;
+}
+
+.hide-eye-register1 {
+    cursor: pointer;
+}
+
+.hide-eye-register2 {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 431px) {
+    .wrapper-location select {
+        width: 70px;
+    }
+
+    .hide-eye-register1 {
+        position: relative;
+        left: 205px;
+        bottom: 35px;
+    }
+
+    .hide-eye-register2 {
+        position: relative;
+        left: 205px;
+        bottom: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hide-eye-register1 {
+        position: relative;
+        left: 480px;
+        bottom: 35px;
+    }
+
+    .hide-eye-register2 {
+        position: relative;
+        left: 480px;
+        bottom: 35px;
+    }
+}
